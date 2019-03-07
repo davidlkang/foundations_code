@@ -32,7 +32,6 @@ def is_valid_IPv6(string_line):
 
 def main(input_string):
     for line in input_string.split("\n"):
-        print(line)
         if not line == input_string.split("\n")[0]:
             if is_valid_IPv4(line):
                 print("IPv4")
