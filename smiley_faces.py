@@ -31,8 +31,8 @@ def valid_mouth(smiley):
 
 def main(input_list):
     smiley_count = 0
-    for string in input_list:
-        if valid_eyes(string) and valid_nose(string) and valid_mouth(string):
+    for smiley in input_list:
+        if valid_eyes(smiley) and valid_nose(smiley) and valid_mouth(smiley):
             smiley_count += 1
         else:
             pass
