@@ -4,6 +4,12 @@ drinks = {"Cocktails": ['Gin Tonic', 'Gin Basil', 'Moscow Mule', 'Whiskey Sour',
 
 number_of_drinks_per_hour_per_type = {'Cocktails':1, 'Beers':3,'Wines':2,'Liquors':2,'Nonalcoholic':3}
 
+def add_lists_to_dict(*kwargs):
+    new_list = {}
+    for key, value in kwargs.items():
+        new_list.update({key: value})
+    return new_list
+
 
 def drinks_needed(drink_category, drink_preferences, drinks_per_hour, number_of_hours):
     total_drinks = {}
